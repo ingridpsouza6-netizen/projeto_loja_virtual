@@ -1,0 +1,127 @@
+/* IMPORTANDO A FONTE */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
+
+/* CONFIGURAÇÕES GERAIS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CORPO DA PÁGINA */
+body{
+    font-family: "Playfair Display", serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* CABEÇALHO */
+header{
+    background-color: #235329;
+    padding: 20px 0;
+    box-shadow: 0 3px 8px rgba(0,0,0,.2);
+}
+
+/* NOME DA LOJA */
+header h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+/* MENU */
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 35px;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover{
+    color: #FFD700;
+}
+
+/* ÍCONE DO CARRINHO */
+nav ul li img{
+    width: 28px;
+    height: 28px;
+    vertical-align: middle;
+}
+
+/* CONTEÚDO PRINCIPAL */
+main{
+    width: 85%;
+    max-width: 1000px;
+    margin: 50px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(36, 24, 24, 0.15);
+}
+
+/* TÍTULO */
+main h2{
+    text-align: center;
+    font-size: 42px;
+    color: #235329;
+    margin-bottom: 30px;
+}
+
+/* PARÁGRAFOS */
+main p{
+    font-size: 18px;
+    line-height: 1.9;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* RODAPÉ */
+footer{
+    background-color: #235329;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 16px;
+}
+
+/* RESPONSIVIDADE */
+@media(max-width:768px){
+
+    header h1{
+        font-size: 38px;
+    }
+
+    nav ul{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    main{
+        width: 95%;
+        padding: 25px;
+    }
+
+    main h2{
+        font-size: 34px;
+    }
+
+    main p{
+        font-size: 16px;
+    }
+
+}
