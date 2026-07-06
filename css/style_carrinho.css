@@ -18,7 +18,7 @@ body{
 /* ================= HEADER ================= */
 
 header{
-    background-color: #235329;
+    background-color: #273a29;
     padding: 20px 0;
 }
 
@@ -67,7 +67,7 @@ main{
 
 main h2{
     text-align: center;
-    color: #235329;
+    color: #1a331e;
     font-size: 42px;
     margin-bottom: 30px;
 }
@@ -80,7 +80,7 @@ table{
 }
 
 th{
-    background-color: #1c5c25;
+    background-color: #1b311e;
     color: white;
     padding: 15px;
     font-size: 18px;
@@ -123,7 +123,7 @@ td img{
 }
 
 button{
-    background-color: #235329;
+    background-color: #182c1b;
     color: white;
     border: none;
     padding: 15px 30px;
@@ -141,8 +141,8 @@ button:hover{
 
 footer{
     margin-top: 50px;
-    background-color: #2f914f;
-    color: rgb(35, 54, 36);
+    background-color: #0d2716;
+    color: rgb(236, 245, 237);
     text-align: center;
     padding: 20px;
 }

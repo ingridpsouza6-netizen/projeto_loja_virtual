@@ -17,7 +17,7 @@ body{
 
 /* CABEÇALHO */
 header{
-    background-color: #235329;
+    background-color: #2a3d2d;
     padding: 20px 0;
     box-shadow: 0 3px 8px rgba(0,0,0,.2);
 }
@@ -91,7 +91,7 @@ main p{
 
 /* RODAPÉ */
 footer{
-    background-color: #235329;
+    background-color: #132215;
     color: white;
     text-align: center;
     padding: 20px;

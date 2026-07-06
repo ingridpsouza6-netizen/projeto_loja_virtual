@@ -11,7 +11,7 @@
 
 /* VARIÁVEIS */
 :root{
-    --cor01:#2c1f1f;
+    --cor01:#241f2c;
     --cor02:#575b99;
     --cor03:#4b32a3;
     --branca:#ffffff;
@@ -55,44 +55,71 @@ body{
 
 #menu a{
     text-decoration: none;
-    color: var(--cor01);
+    color: #4b2e1f;
     text-transform: uppercase;
     font-size: 1.1em;
     font-weight: bold;
+    transition: .3s;
 }
 
 #menu a:hover{
-    color: var(--cor03);
+    color: #8b5e3c;
 }
 
-;
+/* CAMPO DE PESQUISA */
+.pesquisa-header input{
+    width: 320px;
+    height: 45px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    outline: none;
+}
+
+/* ===========================
+   BANNER PRINCIPAL
+=========================== */
+
 #pesquisa{
     width: 100%;
-    height: 300px;
-    background: rgb(45, 85, 72);
+    height: 330px;
+
+    background: linear-gradient(135deg, #0a2317 0%, #123524 50%, #0a2317 100%);
 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,.25);
 }
+
 .texto-banner{
     text-align: center;
 }
 
 .texto-banner h2{
-    color: white;
-    font-size: 90px;
+    color: #e4dacb;
+    font-size: 95px;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .texto-banner p{
-    color: white;
-    font-size: 30px;
+    color: #d9c5a1;
+    font-size: 32px;
+}
+
+.texto-banner::after{
+    display:block;
+    color:#c6a15b;
+    font-size:24px;
+    margin-top:15px;
 }
 
 /* CARDS */
+
 #cards{
     width: 90%;
     max-width: 1400px;
@@ -106,12 +133,13 @@ body{
 }
 
 /* CARD */
+
 .card{
     width: 260px;
-    background: rgb(255, 255, 255);
-    border-radius: 10px;
+    background: #ffffff;
+    border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(126, 10, 10, 0.15);
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
     transition: .3s;
 
     display: flex;
@@ -120,10 +148,11 @@ body{
 }
 
 .card:hover{
-    transform: translateY(-5px);
+    transform: translateY(-8px);
 }
 
 /* IMAGENS */
+
 .card img{
     width: 100%;
     height: 320px;
@@ -132,78 +161,80 @@ body{
 }
 
 /* NOME */
+
 .card p{
     width: 100%;
     padding: 15px;
     text-align: center;
     font-size: 18px;
     text-transform: uppercase;
+    color:#333;
 }
 
 /* PREÇO */
+
 .card h2{
-    color: #000;
-    margin-bottom: 15px;
-    font-size: 28px;
+    color:#000;
+    margin-bottom:15px;
+    font-size:28px;
 }
 
 /* BOTÃO */
+
 .card button{
-    width: 85%;
-    height: 45px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 5px;
-    background: var(--cor01);
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    transition: .3s;
+    width:85%;
+    height:45px;
+    margin-bottom:20px;
+    border:none;
+    border-radius:6px;
+    background:#0d3b2a;
+    color:#fff;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
 }
 
 .card button:hover{
-    background: var(--cor03);
+    background:#1b5e44;
 }
 
 /* RODAPÉ */
+
 #rodape{
-    width: 100%;
-    height: 180px;
-    margin-top: 40px;
-    background: rgb(78, 83, 90);
+    width:100%;
+    height:180px;
+    margin-top:40px;
+    background:#2f3a3f;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
-    color: rgb(255, 255, 255);
-    font-size: 20px;
+    color:white;
+    font-size:20px;
 }
+
+/* TÍTULO */
+
 header h1{
-    text-align: center;
-    font-size: 50px;
-    color: #4b2e1f;
-    margin: 20px 0;
+    text-align:center;
+    font-size:50px;
+    color:#4b2e1f;
+    margin:20px 0;
 }
+
+/* MENU SECUNDÁRIO */
+
 nav ul{
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    gap: 30px;
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    gap:30px;
 }
 
 nav ul li a{
-    text-decoration: none;
-    color: #4b2e1f;
-    font-size: 20px;
-    font-weight: bold;
-}
-.pesquisa-header input{
-    width: 320px;
-    height: 45px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 30px;
-    font-size: 18px;
-    outline: none;
+    text-decoration:none;
+    color:#4b2e1f;
+    font-size:20px;
+    font-weight:bold;
 }
