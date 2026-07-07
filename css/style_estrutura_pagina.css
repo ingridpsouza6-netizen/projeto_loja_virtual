@@ -13,7 +13,7 @@
 :root{
     --cor01:#241f2c;
     --cor02:#575b99;
-    --cor03:#4b32a3;
+    --cor03:#684dca;
     --branca:#ffffff;
 }
 
@@ -57,7 +57,7 @@ body{
     text-decoration: none;
     color: #4b2e1f;
     text-transform: uppercase;
-    font-size: 1.1em;
+    font-size:35 px;
     font-weight: bold;
     transition: .3s;
 }
@@ -83,7 +83,7 @@ body{
 
 #pesquisa{
     width: 100%;
-    height: 330px;
+    height: 300px;
 
     background: linear-gradient(135deg, #0a2317 0%, #123524 50%, #0a2317 100%);
 
@@ -214,8 +214,7 @@ body{
     font-size:20px;
 }
 
-/* TÍTULO */
-
+/* TÍTULO */ 
 header h1{
     text-align:center;
     font-size:50px;
@@ -237,4 +236,16 @@ nav ul li a{
     color:#4b2e1f;
     font-size:20px;
     font-weight:bold;
+}
+.carrinho{
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    display: block;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.carrinho:hover{
+    transform: scale(1.1);
 }

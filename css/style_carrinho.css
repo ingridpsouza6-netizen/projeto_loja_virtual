@@ -165,7 +165,8 @@ footer{
     }
 
     td img{
-        width: 80px;
+        width: 100px;
+        border-radius: 10px;
     }
 
     .botoes{
@@ -177,4 +178,27 @@ footer{
         width: 100%;
     }
 
+}
+
+.carrinho{
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    display: block;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.carrinho:hover{
+    transform: scale(1.1);
+}
+.fa-cart-shopping{
+    color: white;
+    font-size: 28px;
+    transition: .3s;
+}
+
+.fa-cart-shopping:hover{
+    color: rgb(58, 54, 107);
+    transform: scale(1.1);
 }
