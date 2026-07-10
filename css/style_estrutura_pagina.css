@@ -249,3 +249,35 @@ nav ul li a{
 .carrinho:hover{
     transform: scale(1.1);
 }
+#secoes-produtos{
+    width: 100%;
+    padding: 20px 0;
+    background: #f5f5f5;
+}
+
+#menu-secoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+}
+
+#menu-secoes li{
+    list-style: none;
+}
+
+#menu-secoes .lnk-secao{
+    text-decoration: none;
+    color: #4b2e1f;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+#menu-secoes .lnk-secao:hover{
+    background: #0d3b2a;
+    color: white;
+}
