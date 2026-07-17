@@ -1,149 +1,269 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
+    <!-- Configurações da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título da aba do navegador -->
     <title>Carrinho - Vista & Arte</title>
 
+    <!-- Arquivo CSS da página -->
     <link rel="stylesheet" href="../css/style_carrinho.css">
+
+    <!-- Biblioteca de ícones Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 </head>
 
 <body>
 
-<header>
-    <h1>Vista & Arte</h1>
+    <!-- ================= CABEÇALHO ================= -->
 
-    <nav>
-        <ul>
-            <li><a href="../index.html">Início</a></li>
-            <li><a href="cadastro.html">Cadastro</a></li>
-            <li><a href="sobrenos.html">Sobre Nós</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li>
-                <a href="Carrinho.html">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </a>
-            </li>
-        </ul>
-    </nav>
-</header>
+    <header>
 
-<main>
+        <!-- Nome da loja -->
+        <h1>Vista & Arte</h1>
 
-    <h2>Meu Carrinho</h2>
+        <!-- Menu de navegação -->
+        <nav>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Imagem</th>
-                <th>Produto</th>
-                <th>Quantidade</th>
-                <th>Preço</th>
-            </tr>
-            <section id="carrinho">
-               
-              
-          <section id="itens-carrinho">
-               <section class="itens">
-                <div class="img-item">
+            <ul>
 
-                    <img src="/imagens/Caminho das Flores.jpg" alt="Caminho das Flores">
-                </div>
-                <div class="descricoes-itens">
-                    <div class="descricao">
-                         Caminho Das Flores
-                         <div class="Valores">
-                            <p>R$749,90</p>
+                <li><a href="../index.html">Início</a></li>
 
-                            <div class="input-quantidade">
-                                <input type="number" name="quant01" class="input-item" value="1">
-                               </div>
-                               <p>R$749,90</p>
+                <li><a href="cadastro.html">Cadastro</a></li>
 
-                               <div class="img-remover">
-                                <img src="imagens/remover.png" alt="">
+                <li><a href="sobrenos.html">Sobre Nós</a></li>
 
-                               </div>
-                         </div>
+                <li><a href="login.html">Login</a></li>
+
+                <!-- Ícone do carrinho -->
+                <li>
+                    <a href="Carrinho.html">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= CONTEÚDO PRINCIPAL ================= -->
+
+    <main>
+
+        <!-- Título da página -->
+        <h2>Meu Carrinho</h2>
+
+        <!-- Tabela do carrinho -->
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Imagem</th>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Preço</th>
+
+                </tr>
+
+            </thead>
+
+        </table>
+
+
+        <!-- ================= ÁREA DO CARRINHO ================= -->
+
+        <section id="carrinho">
+
+            <!-- Primeiro produto -->
+            <section id="itens-carrinho">
+
+                <section class="itens">
+
+                    <!-- Imagem do produto -->
+                    <div class="img-item">
+
+                        <img src="/imagens/Caminho das Flores.jpg" alt="Caminho das Flores">
+
                     </div>
+
+                    <!-- Informações do produto -->
+                    <div class="descricoes-itens">
+
+                        <div class="descricao">
+
+                            Caminho Das Flores
+
+                            <div class="Valores">
+
+                                <p>R$749,90</p>
+
+                                <!-- Quantidade -->
+                                <div class="input-quantidade">
+
+                                    <input type="number" name="quant01" class="input-item" value="1">
+
+                                </div>
+
+                                <!-- Valor total do item -->
+                                <p>R$749,90</p>
+
+                                <!-- Botão de remover -->
+                                <div class="img-remover">
+
+                                    <img src="imagens/remover.png" alt="Remover produto">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </section>
+
+
+            <!-- Segundo produto -->
+            <section id="itens-carrinho">
+
+                <section class="itens">
+
+                    <!-- Imagem -->
+                    <div class="img-item">
+
+                        <img src="/imagens/Jardim de tulipas Holanda.jpg" alt="Jardim de Tulipas">
+
+                    </div>
+
+                    <!-- Informações -->
+                    <div class="descricoes-itens">
+
+                        <div class="descricao">
+
+                            Jardim de Tulipas
+
+                            <div class="Valores">
+
+                                <p>R$1.299,90</p>
+
+                                <!-- Quantidade -->
+                                <div class="input-quantidade">
+
+                                    <input type="number" name="quant01" class="input-item" value="1">
+
+                                </div>
+
+                                <!-- Valor -->
+                                <p>R$1.299,90</p>
+
+                                <!-- Remover produto -->
+                                <div class="img-remover">
+
+                                    <img src="imagens/remover.png" alt="Remover produto">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </section>
+
+
+            <!-- ================= RESUMO DA COMPRA ================= -->
+
+            <div id="valores-carrinho">
+
+                <!-- Cadastro -->
+                <section id="pequisa">
+
+                    <h3>Cadastro pessoa</h3>
+
+                </section>
+
+
+                <!-- Campo CEP -->
+                <div id="div-cep">
+
+                    <h2 class="titulo-valores-carrinho">CEP</h2>
+
+                    <div id="input-cep">
+
+                        <input type="text" name="input-cep" id="input-cep" class="input-cep">
+
+                    </div>
+
                 </div>
-               </section>
-        </section> 
 
 
-        <section id="itens-carrinho">
-            <section class="itens">
-             <div class="img-item">
+                <!-- Valores da compra -->
+                <div id="div-calc-valor">
 
-                 <img src="/imagens/Jardim de tulipas Holanda.jpg" alt="Jardim de Tulipas">
-             </div>
-             <div class="descricoes-itens">
-                 <div class="descricao">
-                    Jardim de Tulipas
-                      <div class="Valores">
-                        <p>R$1.299,90</p>
+                    <h2 class="titulo-valores-carrinho">Valor Total:</h2>
 
-                         <div class="input-quantidade">
-                             <input type="number" name="quant01" class="input-item" value="1">
-                            </div>
-                            <p>R$1.299,90</p>
+                    <p id="valor-total" class="valor">R$ 100,00</p>
 
-                            <div class="img-remover">
-                             <img src="imagens/remover.png" alt="">
-                             
-                            </div>
-                      </div>
-                 </div>
-             </div>
-            </section>
-     </section> 
-              
-     <div id="valores-carrinho">
+                    <h2 class="titulo-valores-carrinho">Valor Frete:</h2>
 
-        <section id="pequisa">
-            <h3>Cadastro pessoa</h3>
-        </section>
-       
-        <div id="div-cep">
-            <h2 class="titulo-valores-carrinho">CEP</h2>
+                    <p id="valor-frete" class="valor">R$ 10,00</p>
 
-            <div id="input-cep">
-                <input type="text" name="input-cep" id="input-cep" class="input-cep">
+                </div>
+
+
+                <!-- Total a pagar -->
+                <div id="div-calc-valor">
+
+                    <h2 class="titulo-valores-carrinho">Total a Pagar:</h2>
+
+                    <p id="valor-pagar" class="valor">R$ 100,00</p>
+
+                </div>
+
+
+                <!-- Botões -->
+                <button id="btn-continuar" class="btn-carrinho">
+
+                    Continuar Compra
+
+                </button>
+
+                <button id="btn-finalizar" class="btn-carrinho">
+
+                    Finalizar Compra
+
+                </button>
+
             </div>
-        </div>
 
-        <div id="div-calc-valor">
-            <h2 class="titulo-valores-carrinho">Valor Total:</h2>
-            <p id="valor-total" class="valor">R$ 100,00</p>
+        </section>
 
-            <h2 class="titulo-valores-carrinho">Valor Frete:</h2>
-            <p id="valor-frete" class="valor">R$ 10,00</p>
-        </div>
-
-        <div id="div-calc-valor">
-            <h2 class="titulo-valores-carrinho">Total a Pagar:</h2>
-            <p id="valor-pagar" class="valor">R$ 100,00</p>
-        </div>
-
-        <button id="btn-continuar" class="btn-carrinho">
-            Continuar Compra
-        </button>
-
-        <button id="btn-finalizar" class="btn-carrinho">
-            Finalizar Compra
-        </button>
+    </main>
 
 
-            </section>
-           
-        
+    <!-- ================= RODAPÉ ================= -->
 
-</main>
+    <footer>
 
-<footer>
-    <p>&copy; 2026 Vista & Arte - Todos os direitos reservados.</p>
-</footer>
+        <p>&copy; 2026 Vista & Arte - Todos os direitos reservados.</p>
+
+    </footer>
 
 </body>
+
 </html>

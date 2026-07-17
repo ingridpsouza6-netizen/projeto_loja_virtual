@@ -1,7 +1,12 @@
-/* IMPORTANDO A FONTE DO GOOGLE */
+/* ================= IMPORTAÇÃO DA FONTE ================= */
+
+/* Importa a fonte Playfair Display do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 
-/* CONFIGURAÇÕES GERAIS */
+
+/* ================= CONFIGURAÇÕES GERAIS ================= */
+
+/* Remove margens e espaçamentos padrão de todos os elementos */
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +14,10 @@
     font-family: "Playfair Display", serif;
 }
 
-/* VARIÁVEIS */
+
+/* ================= VARIÁVEIS DE CORES ================= */
+
+/* Cores reutilizadas em todo o site */
 :root{
     --cor01:#241f2c;
     --cor02:#575b99;
@@ -17,12 +25,18 @@
     --branca:#ffffff;
 }
 
-/* BODY */
+
+/* ================= CORPO DA PÁGINA ================= */
+
+/* Define a cor de fundo da página */
 body{
     background-color: #f5f5f5;
 }
 
-/* CONTAINER PRINCIPAL */
+
+/* ================= CONTAINER PRINCIPAL ================= */
+
+/* Centraliza todo o conteúdo da página */
 #geral{
     width: 100%;
     display: flex;
@@ -30,7 +44,10 @@ body{
     align-items: center;
 }
 
-/* CABEÇALHO */
+
+/* ================= CABEÇALHO ================= */
+
+/* Área superior da página */
 #cabecalho{
     width: 100%;
     height: 100px;
@@ -40,7 +57,10 @@ body{
     align-items: center;
 }
 
-/* MENU */
+
+/* ================= MENU PRINCIPAL ================= */
+
+/* Lista do menu */
 #menu ul{
     display: flex;
     align-items: center;
@@ -48,25 +68,31 @@ body{
     list-style: none;
 }
 
+/* Ícones do menu */
 #menu ul img{
     width: 25px;
     height: 25px;
 }
 
+/* Links do menu */
 #menu a{
     text-decoration: none;
     color: #4b2e1f;
     text-transform: uppercase;
-    font-size:35 px;
+    font-size:35px;
     font-weight: bold;
     transition: .3s;
 }
 
+/* Efeito ao passar o mouse */
 #menu a:hover{
     color: #8b5e3c;
 }
 
-/* CAMPO DE PESQUISA */
+
+/* ================= CAMPO DE PESQUISA ================= */
+
+/* Caixa de pesquisa do cabeçalho */
 .pesquisa-header input{
     width: 320px;
     height: 45px;
@@ -77,10 +103,10 @@ body{
     outline: none;
 }
 
-/* ===========================
-   BANNER PRINCIPAL
-=========================== */
 
+/* ================= BANNER PRINCIPAL ================= */
+
+/* Área do banner */
 #pesquisa{
     width: 100%;
     height: 300px;
@@ -95,10 +121,12 @@ body{
     box-shadow: 0 10px 25px rgba(0,0,0,.25);
 }
 
+/* Centraliza os textos do banner */
 .texto-banner{
     text-align: center;
 }
 
+/* Título do banner */
 .texto-banner h2{
     color: #e4dacb;
     font-size: 95px;
@@ -106,11 +134,13 @@ body{
     margin-bottom: 20px;
 }
 
+/* Subtítulo do banner */
 .texto-banner p{
     color: #d9c5a1;
     font-size: 32px;
 }
 
+/* Área reservada para conteúdo adicional após o banner */
 .texto-banner::after{
     display:block;
     color:#c6a15b;
@@ -118,8 +148,10 @@ body{
     margin-top:15px;
 }
 
-/* CARDS */
 
+/* ================= ÁREA DOS CARDS ================= */
+
+/* Organiza os produtos em formato de grade */
 #cards{
     width: 90%;
     max-width: 1400px;
@@ -132,8 +164,10 @@ body{
     justify-items: center;
 }
 
-/* CARD */
 
+/* ================= CARD DO PRODUTO ================= */
+
+/* Caixa individual de cada produto */
 .card{
     width: 260px;
     background: #ffffff;
@@ -147,12 +181,15 @@ body{
     align-items: center;
 }
 
+/* Efeito ao passar o mouse */
 .card:hover{
     transform: translateY(-8px);
 }
 
-/* IMAGENS */
 
+/* ================= IMAGEM DO PRODUTO ================= */
+
+/* Ajusta a imagem do produto */
 .card img{
     width: 100%;
     height: 320px;
@@ -160,8 +197,10 @@ body{
     display: block;
 }
 
-/* NOME */
 
+/* ================= NOME DO PRODUTO ================= */
+
+/* Nome do produto */
 .card p{
     width: 100%;
     padding: 15px;
@@ -171,16 +210,20 @@ body{
     color:#333;
 }
 
-/* PREÇO */
 
+/* ================= PREÇO DO PRODUTO ================= */
+
+/* Valor do produto */
 .card h2{
     color:#000;
     margin-bottom:15px;
     font-size:28px;
 }
 
-/* BOTÃO */
 
+/* ================= BOTÃO DO CARD ================= */
+
+/* Botão de compra */
 .card button{
     width:85%;
     height:45px;
@@ -194,12 +237,15 @@ body{
     transition:.3s;
 }
 
+/* Efeito ao passar o mouse */
 .card button:hover{
     background:#1b5e44;
 }
 
-/* RODAPÉ */
 
+/* ================= RODAPÉ ================= */
+
+/* Área inferior da página */
 #rodape{
     width:100%;
     height:180px;
@@ -214,7 +260,10 @@ body{
     font-size:20px;
 }
 
-/* TÍTULO */ 
+
+/* ================= TÍTULO DA PÁGINA ================= */
+
+/* Título principal */
 header h1{
     text-align:center;
     font-size:50px;
@@ -222,8 +271,10 @@ header h1{
     margin:20px 0;
 }
 
-/* MENU SECUNDÁRIO */
 
+/* ================= MENU SECUNDÁRIO ================= */
+
+/* Lista do menu secundário */
 nav ul{
     display:flex;
     justify-content:center;
@@ -231,12 +282,18 @@ nav ul{
     gap:30px;
 }
 
+/* Links do menu secundário */
 nav ul li a{
     text-decoration:none;
     color:#4b2e1f;
     font-size:20px;
     font-weight:bold;
 }
+
+
+/* ================= ÍCONE DO CARRINHO ================= */
+
+/* Imagem do carrinho */
 .carrinho{
     width: 35px;
     height: 35px;
@@ -246,15 +303,22 @@ nav ul li a{
     transition: transform .3s;
 }
 
+/* Aumenta o carrinho ao passar o mouse */
 .carrinho:hover{
     transform: scale(1.1);
 }
+
+
+/* ================= MENU DAS SEÇÕES ================= */
+
+/* Área onde ficam os links das categorias */
 #secoes-produtos{
     width: 100%;
     padding: 20px 0;
     background: #f5f5f5;
 }
 
+/* Lista das categorias */
 #menu-secoes{
     display: flex;
     justify-content: center;
@@ -263,10 +327,12 @@ nav ul li a{
     list-style: none;
 }
 
+/* Remove os marcadores da lista */
 #menu-secoes li{
     list-style: none;
 }
 
+/* Links das categorias */
 #menu-secoes .lnk-secao{
     text-decoration: none;
     color: #4b2e1f;
@@ -277,10 +343,18 @@ nav ul li a{
     transition: .3s;
 }
 
+/* Efeito ao passar o mouse */
 #menu-secoes .lnk-secao:hover{
     background: #0d3b2a;
     color: white;
 }
+
+
+/* ================= MENU DAS SEÇÕES (REPETIDO) ================= */
+
+/* Este bloco repete as configurações anteriores,
+   alterando apenas a cor inicial dos links. */
+
 #menu-secoes{
     display: flex;
     justify-content: center;

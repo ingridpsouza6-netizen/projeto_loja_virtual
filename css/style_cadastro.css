@@ -1,5 +1,12 @@
+/* ================= IMPORTAÇÃO DA FONTE ================= */
+
+/* Importa a fonte Playfair Display do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
 
+
+/* ================= CONFIGURAÇÕES GERAIS ================= */
+
+/* Remove margens e espaçamentos padrão e define a fonte do site */
 *{
     margin:0;
     padding:0;
@@ -7,21 +14,34 @@
     font-family:"Playfair Display",serif;
 }
 
+
+/* ================= CORPO DA PÁGINA ================= */
+
+/* Define a cor de fundo da página */
 body{
     background:#f5f5f5;
 }
 
+
+/* ================= CABEÇALHO ================= */
+
+/* Estilo do cabeçalho */
 header{
     background:#235329;
     padding:20px;
 }
 
+/* Título principal */
 header h1{
     text-align:center;
     color:white;
     margin-bottom:20px;
 }
 
+
+/* ================= MENU DE NAVEGAÇÃO ================= */
+
+/* Lista do menu */
 nav ul{
     display:flex;
     justify-content:center;
@@ -29,12 +49,17 @@ nav ul{
     gap:30px;
 }
 
+/* Links do menu */
 nav a{
     color:white;
     text-decoration:none;
     font-weight:bold;
 }
 
+
+/* ================= CONTEÚDO PRINCIPAL ================= */
+
+/* Caixa principal onde está o formulário */
 main{
     width:800px;
     max-width:90%;
@@ -45,12 +70,17 @@ main{
     box-shadow:0 5px 15px rgba(0,0,0,.15);
 }
 
+/* Título da página */
 h2{
     text-align:center;
     margin-bottom:30px;
     color:#235329;
 }
 
+
+/* ================= FORMULÁRIO ================= */
+
+/* Texto dos campos do formulário */
 label{
     display:block;
     margin-top:15px;
@@ -58,6 +88,7 @@ label{
     font-weight:bold;
 }
 
+/* Campos de entrada (input) */
 input{
     width:100%;
     padding:12px;
@@ -65,15 +96,24 @@ input{
     border-radius:8px;
 }
 
+
+/* ================= CAMPOS AGRUPADOS ================= */
+
+/* Organiza dois campos lado a lado */
 .grupo{
     display:flex;
     gap:20px;
 }
 
+/* Faz cada campo ocupar o mesmo espaço */
 .grupo div{
     flex:1;
 }
 
+
+/* ================= CHECKBOX ================= */
+
+/* Organiza o checkbox e o texto ao lado */
 .check{
     display:flex;
     align-items:center;
@@ -81,10 +121,15 @@ input{
     margin-top:20px;
 }
 
+/* Mantém o tamanho normal do checkbox */
 .check input{
     width:auto;
 }
 
+
+/* ================= BOTÃO ================= */
+
+/* Botão de envio do formulário */
 button{
     margin-top:30px;
     width:100%;
@@ -97,10 +142,15 @@ button{
     cursor:pointer;
 }
 
+/* Efeito ao passar o mouse */
 button:hover{
     background:#2f6b37;
 }
 
+
+/* ================= RODAPÉ ================= */
+
+/* Estilo do rodapé */
 footer{
     margin-top:40px;
     background:#235329;

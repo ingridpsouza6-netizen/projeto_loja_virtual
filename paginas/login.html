@@ -1,50 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
+    <!-- Configurações da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título da aba do navegador -->
     <title>Login - Vista & Arte</title>
 
+    <!-- Arquivo CSS -->
     <link rel="stylesheet" href="../css/style_login.css">
+
 </head>
+
 <body>
 
-<section class="login">
+    <!-- ================= TELA DE LOGIN ================= -->
 
-    <div class="login-box">
+    <section class="login">
 
-        <h1>Vista & Arte</h1>
-        <p>Entre em sua conta</p>
+        <!-- Caixa de login -->
+        <div class="login-box">
 
-        <form>
+            <!-- Nome da loja -->
+            <h1>Vista & Arte</h1>
 
-            <div class="campo">
-                <label>E-mail</label>
-                <input type="email" placeholder="Digite seu e-mail" required>
+            <!-- Texto de apresentação -->
+            <p>Entre em sua conta</p>
+
+            <!-- Formulário de login -->
+            <form>
+
+                <!-- Campo de e-mail -->
+                <div class="campo">
+
+                    <label>E-mail</label>
+
+                    <input type="email"
+                           placeholder="Digite seu e-mail"
+                           required>
+
+                </div>
+
+                <!-- Campo de senha -->
+                <div class="campo">
+
+                    <label>Senha</label>
+
+                    <input type="password"
+                           placeholder="Digite sua senha"
+                           required>
+
+                </div>
+
+                <!-- Botão para entrar -->
+                <button type="submit">
+
+                    Entrar
+
+                </button>
+
+            </form>
+
+            <!-- Links auxiliares -->
+            <div class="links-login">
+
+                <!-- Link para recuperação de senha -->
+                <a href="#">Esqueci minha senha</a>
+
+                <!-- Texto informativo -->
+                <span>Não possui conta?</span>
+
+                <!-- Link para cadastro -->
+                <a href="#">Cadastre-se</a>
+
             </div>
 
-            <div class="campo">
-                <label>Senha</label>
-                <input type="password" placeholder="Digite sua senha" required>
-            </div>
-
-            <button type="submit">
-                Entrar
-            </button>
-
-        </form>
-
-        <div class="links-login">
-            <a href="#">Esqueci minha senha</a>
-
-            <span>Não possui conta?</span>
-
-            <a href="#">Cadastre-se</a>
         </div>
 
-    </div>
-
-</section>
+    </section>
 
 </body>
+
 </html>

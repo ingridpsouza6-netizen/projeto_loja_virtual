@@ -2,220 +2,291 @@
 <html lang="pt-BR">
 
 <head>
+
+    <!-- ================= CONFIGURAÇÕES DA PÁGINA ================= -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título da aba do navegador -->
     <title>Vista & Arte</title>
 
+    <!-- Arquivo CSS -->
     <link rel="stylesheet" href="css/style_estrutura_pagina.css">
+
+    <!-- Biblioteca de ícones Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-</head>
 
 </head>
 
 <body>
-    
 
-    <!-- CABEÇALHO -->
+    <!-- ================= CABEÇALHO ================= -->
+
     <header id="cabecalho">
 
+        <!-- Menu de navegação -->
         <nav id="menu">
+
             <ul>
+
                 <li><a href="index.html">Início</a></li>
+
                 <li><a href="paginas/cadastro.html">Cadastro</a></li>
+
                 <li><a href="paginas/sobrenos.html">Sobre Nós</a></li>
+
                 <li><a href="paginas/login.html">Login</a></li>
 
+                <!-- Ícone do carrinho -->
                 <li>
+
                     <a href="paginas/carrinho.html">
-                       
+
                         <i class="fa-solid fa-cart-shopping"></i>
+
+                    </a>
+
                 </li>
+
             </ul>
+
         </nav>
 
+        <!-- Campo de pesquisa -->
         <div class="pesquisa-header">
+
             <input
                 type="text"
                 class="input-pesquisa"
                 placeholder="Pesquisar Quadros...">
+
         </div>
 
     </header>
-   
-    <!-- BANNER -->
+
+
+    <!-- ================= BANNER ================= -->
+
     <section id="pesquisa">
 
         <div class="texto-banner">
+
             <h2>Vista & Arte</h2>
+
             <p>As mais belas paisagens para decorar seu ambiente.</p>
+
         </div>
 
     </section>
+
+
+    <!-- ================= MENU DE CATEGORIAS ================= -->
+
     <section id="secoes-produtos">
+
         <ul id="menu-secoes">
+
             <li><a href="#" class="lnk-secao">Paisagens Floridas</a></li>
+
             <li><a href="#" class="lnk-secao">Praias e Ilhas</a></li>
+
             <li><a href="#" class="lnk-secao">Montanhas e Geleiras</a></li>
+
             <li><a href="#" class="lnk-secao">Lagos e Cachoeiras</a></li>
+
             <li><a href="#" class="lnk-secao">Céus e Paisagens Naturais</a></li>
+
         </ul>
+
     </section>
 
-    <!-- CONTEÚDO -->
+
+    <!-- ================= CONTEÚDO PRINCIPAL ================= -->
+
     <main>
 
+        <!-- Lista de produtos -->
         <section id="cards">
 
+            <!-- Produto 1 -->
             <div class="card">
                 <img src="imagens/Jardim de tulipas Holanda.jpg" alt="Jardim de Tulipas - Holanda">
                 <p>Jardim de Tulipas - Holanda</p>
                 <h2>R$ 1.299,90</h2>
                 <button class="btn-add" data-id="1">Adicionar</button>
             </div>
-            
+
+            <!-- Produto 2 -->
             <div class="card">
                 <img src="imagens/Caminho das Flores.jpg" alt="Caminho das Flores">
                 <p>Caminho das Flores</p>
                 <h2>R$ 749,90</h2>
                 <button class="btn-add" data-id="2">Adicionar</button>
             </div>
-            
+
+            <!-- Produto 3 -->
             <div class="card">
                 <img src="imagens/Praia Dourada.jpg" alt="Praia Dourada">
                 <p>Praia Dourada</p>
                 <h2>R$ 689,90</h2>
                 <button class="btn-add" data-id="3">Adicionar</button>
             </div>
-            
+
+            <!-- Produto 4 -->
             <div class="card">
                 <img src="imagens/Lago ao Entardecer.jpg" alt="Lago ao Entardecer">
                 <p>Lago ao Entardecer</p>
                 <h2>R$ 849,90</h2>
                 <button class="btn-add" data-id="4">Adicionar</button>
             </div>
-            
+
+            <!-- Produto 5 -->
             <div class="card">
                 <img src="imagens/Paraíso Tropical.jpg" alt="Paraíso Tropical">
                 <p>Paraíso Tropical</p>
                 <h2>R$ 999,90</h2>
                 <button class="btn-add" data-id="5">Adicionar</button>
             </div>
-            
+
+            <!-- Produto 6 -->
             <div class="card">
                 <img src="imagens/Costa Rochosa.jpg" alt="Costa Rochosa">
                 <p>Costa Rochosa</p>
                 <h2>R$ 1.149,90</h2>
                 <button class="btn-add" data-id="6">Adicionar</button>
             </div>
-            
+
+            <!-- Produto 7 -->
             <div class="card">
                 <img src="imagens/Pôr do Sol Escarlate.jpg" alt="Pôr do Sol Escarlate">
                 <p>Pôr do Sol Escarlate</p>
                 <h2>R$ 599,90</h2>
                 <button class="btn-add" data-id="7">Adicionar</button>
             </div>
-            
+
+            <!-- Produto 8 -->
             <div class="card">
                 <img src="imagens/Vale dos Alpes.jpg" alt="Vale dos Alpes">
                 <p>Vale dos Alpes</p>
                 <h2>R$ 1.199,90</h2>
                 <button class="btn-add" data-id="8">Adicionar</button>
             </div>
-            
+
+            <!-- Produto 9 -->
             <div class="card">
                 <img src="imagens/Reflexos do Infinito.jpg" alt="Reflexos do Infinito">
                 <p>Reflexos do Infinito</p>
                 <h2>R$ 949,90</h2>
                 <button class="btn-add" data-id="9">Adicionar</button>
             </div>
-            
+
+            <!-- Produto 10 -->
             <div class="card">
                 <img src="imagens/Ilha da Serenidade.jpg" alt="Ilha da Serenidade">
                 <p>Ilha da Serenidade</p>
                 <h2>R$ 899,90</h2>
                 <button class="btn-add" data-id="10">Adicionar</button>
             </div>
-            
+
+            <!-- Produto 11 -->
             <div class="card">
                 <img src="imagens/Mar Dourado.jpg" alt="Mar Dourado">
                 <p>Mar Dourado</p>
                 <h2>R$ 729,90</h2>
                 <button class="btn-add" data-id="11">Adicionar</button>
             </div>
-            
+
+            <!-- Produto 12 -->
             <div class="card">
                 <img src="imagens/Praia de Águas Cristalinas.jpg" alt="Praia de Águas Cristalinas">
                 <p>Praia de Águas Cristalinas</p>
                 <h2>R$ 819,90</h2>
                 <button class="btn-add" data-id="12">Adicionar</button>
             </div>
-            
+
+            <!-- Produto 13 -->
             <div class="card">
                 <img src="imagens/Outono à Beira do Lago.jpg" alt="Outono à Beira do Lago">
                 <p>Outono à Beira do Lago</p>
                 <h2>R$ 879,90</h2>
                 <button class="btn-add" data-id="13">Adicionar</button>
             </div>
-            
+
+            <!-- Produto 14 -->
             <div class="card">
                 <img src="imagens/Montanhas Azuis.jpg" alt="Montanhas Azuis">
                 <p>Montanhas Azuis</p>
                 <h2>R$ 1.089,90</h2>
                 <button class="btn-add" data-id="14">Adicionar</button>
             </div>
-            
+
+            <!-- Produto 15 -->
             <div class="card">
                 <img src="imagens/Lago Turquesa.jpg" alt="Lago Turquesa">
                 <p>Lago Turquesa</p>
                 <h2>R$ 1.249,90</h2>
                 <button class="btn-add" data-id="15">Adicionar</button>
             </div>
-            
+
+            <!-- Produto 16 -->
             <div class="card">
                 <img src="imagens/Cachoeira Encantada.jpg" alt="Cachoeira Encantada">
                 <p>Cachoeira Encantada</p>
                 <h2>R$ 969,90</h2>
                 <button class="btn-add" data-id="16">Adicionar</button>
             </div>
-            
+
+            <!-- Produto 17 -->
             <div class="card">
                 <img src="imagens/Geleira Azul.jpg" alt="Geleira Azul">
                 <p>Geleira Azul</p>
                 <h2>R$ 1.279,90</h2>
                 <button class="btn-add" data-id="17">Adicionar</button>
             </div>
-            
+
+            <!-- Produto 18 -->
             <div class="card">
                 <img src="imagens/Praia Esmeralda.jpg" alt="Praia Esmeralda">
                 <p>Praia Esmeralda</p>
                 <h2>R$ 929,90</h2>
                 <button class="btn-add" data-id="18">Adicionar</button>
             </div>
-            
+
+            <!-- Produto 19 -->
             <div class="card">
                 <img src="imagens/Horizonte Dourado.jpg" alt="Horizonte Dourado">
                 <p>Horizonte Dourado</p>
                 <h2>R$ 639,90</h2>
                 <button class="btn-add" data-id="19">Adicionar</button>
             </div>
-            
+
+            <!-- Produto 20 -->
             <div class="card">
                 <img src="imagens/Ilha dos Coqueiros.jpg" alt="Ilha dos Coqueiros">
                 <p>Ilha dos Coqueiros</p>
                 <h2>R$ 1.099,90</h2>
                 <button class="btn-add" data-id="20">Adicionar</button>
             </div>
-           
+
         </section>
 
     </main>
 
-    <!-- RODAPÉ -->
+
+    <!-- ================= RODAPÉ ================= -->
+
     <footer id="rodape">
+
         <p>&copy; Vista & Arte - Todos os direitos reservados.</p>
+
     </footer>
 
+
+    <!-- ================= JAVASCRIPT ================= -->
+
     <script type="module" src="js/script.js"></script>
+
 </body>
 
 </html>

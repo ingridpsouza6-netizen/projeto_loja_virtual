@@ -1,118 +1,186 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
+    <!-- Configurações da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título da aba do navegador -->
     <title>Cadastro - Vista & Arte</title>
 
+    <!-- Arquivo CSS -->
     <link rel="stylesheet" href="../css/style_cadastro.css">
+
 </head>
+
 <body>
 
-<header>
-    <h1>Vista & Arte</h1>
+    <!-- ================= CABEÇALHO ================= -->
 
-    <nav>
-        <ul>
-            <li><a href="../index.html">Início</a></li>
-            <li><a href="cadastro.html">Cadastro</a></li>
-            <li><a href="sobrenos.html">Sobre Nós</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="carrinho.html">Carrinho</a>
-                <img src="/imagens/carrinho.png" alt="Carrinho"></li>
-        </ul>
-    </nav>
-</header>
+    <header>
 
-<main>
+        <!-- Nome da loja -->
+        <h1>Vista & Arte</h1>
 
-    <h2>Cadastro de Cliente</h2>
+        <!-- Menu de navegação -->
+        <nav>
 
-    <form>
+            <ul>
 
-        <div class="grupo">
-            <div>
-                <label>Nome Completo</label>
-                <input type="text" required>
+                <li><a href="../index.html">Início</a></li>
+
+                <li><a href="cadastro.html">Cadastro</a></li>
+
+                <li><a href="sobrenos.html">Sobre Nós</a></li>
+
+                <li><a href="login.html">Login</a></li>
+
+                <!-- Link do carrinho -->
+                <li>
+                    <a href="carrinho.html">Carrinho</a>
+                    <img src="/imagens/carrinho.png" alt="Carrinho">
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= CONTEÚDO PRINCIPAL ================= -->
+
+    <main>
+
+        <!-- Título da página -->
+        <h2>Cadastro de Cliente</h2>
+
+        <!-- Formulário de cadastro -->
+        <form>
+
+            <!-- Nome e CPF -->
+            <div class="grupo">
+
+                <div>
+                    <label>Nome Completo</label>
+                    <input type="text" required>
+                </div>
+
+                <div>
+                    <label>CPF</label>
+                    <input type="text" required>
+                </div>
+
             </div>
 
-            <div>
-                <label>CPF</label>
-                <input type="text" required>
-            </div>
-        </div>
 
-        <div class="grupo">
-            <div>
-                <label>E-mail</label>
-                <input type="email" required>
-            </div>
+            <!-- E-mail e telefone -->
+            <div class="grupo">
 
-            <div>
-                <label>Telefone</label>
-                <input type="tel">
-            </div>
-        </div>
+                <div>
+                    <label>E-mail</label>
+                    <input type="email" required>
+                </div>
 
-        <div class="grupo">
-            <div>
-                <label>Data de Nascimento</label>
-                <input type="date">
+                <div>
+                    <label>Telefone</label>
+                    <input type="tel">
+                </div>
+
             </div>
 
-            <div>
-                <label>CEP</label>
-                <input type="text">
-            </div>
-        </div>
 
-        <label>Endereço</label>
-        <input type="text">
+            <!-- Data de nascimento e CEP -->
+            <div class="grupo">
 
-        <div class="grupo">
-            <div>
-                <label>Número</label>
-                <input type="number">
-            </div>
+                <div>
+                    <label>Data de Nascimento</label>
+                    <input type="date">
+                </div>
 
-            <div>
-                <label>Complemento</label>
-                <input type="text">
-            </div>
-        </div>
+                <div>
+                    <label>CEP</label>
+                    <input type="text">
+                </div>
 
-        <div class="grupo">
-            <div>
-                <label>Cidade</label>
-                <input type="text">
             </div>
 
-            <div>
-                <label>Estado</label>
-                <input type="text">
+
+            <!-- Endereço -->
+            <label>Endereço</label>
+            <input type="text">
+
+
+            <!-- Número e complemento -->
+            <div class="grupo">
+
+                <div>
+                    <label>Número</label>
+                    <input type="number">
+                </div>
+
+                <div>
+                    <label>Complemento</label>
+                    <input type="text">
+                </div>
+
             </div>
-        </div>
 
-        <label>Senha</label>
-        <input type="password">
 
-        <label>Confirmar Senha</label>
-        <input type="password">
+            <!-- Cidade e estado -->
+            <div class="grupo">
 
-        <div class="check">
-            <input type="checkbox">
-            <span>Aceito os termos de uso.</span>
-        </div>
+                <div>
+                    <label>Cidade</label>
+                    <input type="text">
+                </div>
 
-        <button type="submit">Cadastrar</button>
+                <div>
+                    <label>Estado</label>
+                    <input type="text">
+                </div>
 
-    </form>
+            </div>
 
-</main>
 
-<footer>
-    <p>&copy; 2026 Vista & Arte - Todos os direitos reservados.</p>
-</footer>
+            <!-- Senha -->
+            <label>Senha</label>
+            <input type="password">
+
+
+            <!-- Confirmação da senha -->
+            <label>Confirmar Senha</label>
+            <input type="password">
+
+
+            <!-- Termos de uso -->
+            <div class="check">
+
+                <input type="checkbox">
+
+                <span>Aceito os termos de uso.</span>
+
+            </div>
+
+
+            <!-- Botão de cadastro -->
+            <button type="submit">Cadastrar</button>
+
+        </form>
+
+    </main>
+
+
+    <!-- ================= RODAPÉ ================= -->
+
+    <footer>
+
+        <p>&copy; 2026 Vista & Arte - Todos os direitos reservados.</p>
+
+    </footer>
 
 </body>
+
 </html>
