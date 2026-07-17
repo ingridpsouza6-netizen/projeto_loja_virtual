@@ -89,7 +89,7 @@ const montaTelaCarrinho = ()=>{
         divRemover.setAttribute('class','img-remover');
 
         const imgRemover = document.createElement('img');
-        imgRemover.setAttribute('src','imagens/remover.png');
+        imgRemover.setAttribute('src','../imagens/remover.png');
 
         divRemover.appendChild(imgRemover);
 

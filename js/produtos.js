@@ -2,7 +2,7 @@
 import { produtos } from './lista_produtos.js'
 import { addItem } from './carrinho.js'
 
-/*PEGANDO ELEMNTOR DO DOM*/
+/*PEGANDO ELEMENTOR DO DOM*/
 const sectionCards = document.querySelector('#cards')
 
 const carregandoProdutos = (op) => {
@@ -11,7 +11,7 @@ const carregandoProdutos = (op) => {
     }
 }
 
-//CARREGAMDO OS CARDS
+//CARREGANDO OS CARDS
 const listaProdutos = () => {
     return produtos
 }
@@ -68,7 +68,10 @@ const carregaSecoes = () => {
         aMenu.setAttribute('class', 'lnk-secao')
         aMenu.innerHTML = elem.secao
 
-        aMenu.addEventListener('click', () => {
+        aMenu.addEventListener('click', (e) => {
+
+            e.preventDefault();
+            
             montaCards(filtroProdutos(elem.id_secao))
         })
 
@@ -92,7 +95,7 @@ const filtroProdutos = (idSecao) => {
 
 //CAPTURANDO OS CARACTERES DO INPUT PESQUISA
 //PEGANDO O INPUT DO DOM 
-const inputPesquisa = document.querySelector('#pesquisa')
+const inputPesquisa = document.querySelector('.input-pesquisa')
 
 inputPesquisa.addEventListener('input', (evt) => {
 
@@ -138,7 +141,7 @@ const montaCards = (objProdutos) => {
 
         btnCard.addEventListener('click', () => {
             addItem(elem)
-            window.location.href = 'carrinho.html'
+            window.location.href = 'paginas/carrinho.html'
         })
 
 
